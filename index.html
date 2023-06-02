@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 300px;
+      max-width: 100%;
+      
+      margin-top: 150px;
+    }
+
+    .card-image {
+      position: relative;
+      max-height: 200px;
+      overflow: hidden;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .social-icons {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .social-icons a {
+      
+      margin-bottom: 5px;
+      color: #fff;
+      font-size: 20px;
+      opacity: 0.8;
+    }
+
+    .card-content {
+      padding: 15px;
+      background-color: antiquewhite;
+      color: chocolate;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+    }
+
+    .card-content p {
+      margin-bottom: 10px;
+    }
+
+    .read-more {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      
+    }
+
+    .read-more:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <center><div class="card">
+    <div class="card-image">
+      <img src="HtmlCSSpic.jpg" alt="Card Image">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="card-content">
+      <center><h3>Oh Deer!!</h3></center>
+      <p>May every sunrise hold more promise and every sunset hold more peace.</p>
+      <center><a href="#" class="read-more">Read more</a></center>
+    </div>
+  </div></center>
+</body>
+</html>
